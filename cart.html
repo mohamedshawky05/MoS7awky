@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="cart-shopping-solid.svg" type="image/x-icon">
+</head>
+<body>
+
+  <h1 style="position: absolute; top: 0;">Cart</h1>
+  <div class="cart">
+    <div id="cart-items"></div>
+    <div class="total">
+      <p>الإجمالي: <span id="total-price">0 جنيه</span></p>
+    </div>
+  </div>
+
+  <script>
+    function loadCart() {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const cartItemsContainer = document.getElementById('cart-items');
+      let total = 0;
+
+      cart.forEach((item, index) => {
+        const itemElement = document.createElement('div');
+        itemElement.className = 'cart-item';
+        itemElement.innerHTML = `
+          <img src="${item.image}" alt="${item.name}">
+          <p>${item.name}</p>
+          <span>${item.price} $</span>
+          <button onclick="removeFromCart(${index})">إزالة</button>
+        `;
+        cartItemsContainer.appendChild(itemElement);
+        total += item.price;
+      });
+
+      document.getElementById('total-price').textContent = total + ' $';
+    }
+
+    function removeFromCart(index) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      document.getElementById('cart-items').innerHTML = '';
+      loadCart();
+    }
+
+    loadCart();
+  </script>
+ 
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="user-solid.svg" type="image/x-icon">
+</head>
+<body>
+    
+<nav class="nav">
+
+    <!-- عرض البيانات المحفوظة -->
+    <p><strong> Name:</strong> <span id="displayFirstName"></span></p>
+    <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+    <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+</nav>
+
+    <form id="updateForm">
+        <h2>Your Profile</h2>
+        <label>First Name: <input type="text" id="updateFirstName" required></label><br>
+        <label>Last Name: <input type="text" id="updateLastName" required></label><br>
+        <label>Email: <input type="email" id="updateEmail" required></label><br>
+        <label>New Password: <input type="password" id="updatePassword"></label><br>
+        <button style="width: 100%; background-color: #333;" type="button" onclick="updateProfile()">Save Changes</button>
+    </form>
+    <footer style="position: absolute; bottom: 0;">
+        <p> 2024 MoS7awky E-commerce. Designed by Engineer Mohamed Shawky All Rights Reserved.&copy;</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

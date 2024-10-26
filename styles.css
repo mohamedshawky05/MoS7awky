@@ -1,0 +1,400 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/*.get{
+    background-color: white;
+    color: red;
+    font-size: 20px;
+    border-radius: 10px; 
+    border: 2px solid transparent;
+} */
+header {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links ul{
+    list-style: none;
+    position: absolute;
+    left: 0;
+   
+}
+.nav-links ul li{
+    margin-bottom: 40px; 
+}
+.user-options ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.Porto{
+    font-size: 40px;
+    font-weight: 800;
+}
+.logo1{
+    margin: 0;
+}
+.eCommerce{
+    position: relative;
+    left: 80px;
+    font-weight: 100;
+    font-size: small;
+}
+.user-options ul li a{
+    text-decoration: none;
+    color: white;
+}
+.user-options ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.nav-links ul li,
+.user-options ul li {
+    cursor: pointer;
+}
+.nav-links ul li{
+    margin: 20px;
+    padding: 10px;
+}
+.nav-links ul li{
+    font-weight: 500;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.span1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero-section {
+    bottom: 50%;
+    /* text-align: center; */
+    width: 100%;
+    height: 600px;
+    /* text-align: center; */
+     background-color: #dad8d8d6; 
+    padding: 50px 20px;
+    background-image: url(shoes/17.jpeg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+.featured-products .product-grid .product-item img{
+   height: 300px;
+   width: 250px;
+ 
+}
+.side{
+    background-color: rgb(214, 69, 125);
+    height: 70px;
+    width: 100%;
+    font-size: 20px;
+ 
+}
+.fa-car-side{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 13px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.star{
+    text-align: left;
+   
+}
+.heart{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-section .center ,button{
+    text-align: center;
+    margin: 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.buy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.span{
+    font-size: larger;
+    font-weight: 700;
+}
+.hero-section button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.featured-products {
+    text-align: center;
+    margin: 50px 0;
+}
+.summer-products{
+    text-align: center;
+    display: flex;
+     padding:40px;  
+    margin: 0;
+}
+.summer-products img{
+   width: 400px;
+
+} 
+.summer-products .img1 img{
+    width: 550px;
+   height: 772px;
+}
+.product-grid { 
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.Best{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    margin: 0 200px;
+}
+.form ,.form2{
+    display: none;
+}
+.form:hover{
+display: block;
+}
+.form2:hover{
+    display: block;
+    }
+    
+.product-item img {
+    width: 250px;
+    height: 250px;
+}
+.menu{
+    display: none;
+}
+/* عند النقر، سيتغير لون العنصر إلى الأحمر */
+ .fa-heart{
+    transition: color 0.3s ease;
+}
+
+.fa-heart:active {
+    color: red;
+   
+} 
+.btn a{
+    text-decoration: none;
+    color: white;
+} 
+
+.fa-star {
+    font-size: 24px;
+    color: gray; /* اللون الافتراضي */
+}
+.fa-star.yellow {
+    color: yellow; /* اللون عند التفعيل */
+}
+.text1{
+    display: block;
+}
+.text2{
+    display: none;
+}
+/* شاشات الهواتف الصغيرة (أقصى عرض 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    header center .side{
+        width: 100%;
+    }
+.logo1,.eCommerce{
+    text-align: center;
+}
+.featured-products .product-grid{
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+}
+.summer-products{
+    width: 100%;
+}
+.text1{
+    display: none;
+}
+.text2{
+    display: block;
+}
+.buy ,.heart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   width: 405px;
+}
+.summer-products div img{
+    width: 100%;
+    height: 200px;
+}
+.summer-products .img2 ,.img3{
+    display: none;
+}
+.summer-product .img1 img{
+    width: 100%;
+    height: 417px;
+    margin: 0;
+}
+.side .fa-car-side h4{
+    font-size: 10px;
+}
+aside .nav-links{
+    display: none;
+}
+#menu{
+    display: none;
+    font-size: 10px;
+}
+#menu option{
+    font-size: 10px
+}
+#menu:hover{
+    display: block;
+}
+
+    .top-bar {
+        display: none; /* إخفاء أجزاء معينة */
+    }
+    .menu{
+        /* position: absolute;
+        left: 0; */
+        display:flex ;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .product-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .featured-products .product-grid{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .featured-products .product-grid img{
+        height: 150px;
+        width: 100%;
+    }
+    .summer-products .img1 img{
+        width: 300px;
+        height: 615px;
+        margin: 0;
+    }
+   
+    .summer-product .img1 img{
+        width: 100%;
+        height: 417px;
+        margin: 0;
+    }
+    .summer-products div img{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width:750px) {
+    aside .nav-links{
+        display: none;
+    }
+    #menu{
+        display: none;
+        font-size: 10px;
+    }
+    #menu option{
+        font-size: 10px
+    }
+    #menu:hover{
+        display: block;
+    }
+    .top-bar {
+        display: none; /* إخفاء أجزاء معينة */
+    }
+    .summer-products .img3{
+        display: none;
+    }
+
+}
+
+@media (max-width:400px) {
+    .featured-products .product-grid{
+        width: 100%;
+    }    
+    .heart{
+        width: 80%;
+    }
+    .buy{
+        width: 95%;
+    }
+    .user-options ul li a{
+        font-size: 7px;
+    }
+    .summer-products .img2 img{
+        margin-bottom: 15px;
+        display: none;
+        position: absolute;
+        right: 0; 
+    }
+    .summer-products .img1 img{
+        display: none;
+    }
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8f9;
+}

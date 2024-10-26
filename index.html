@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOShawky E-commerce</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Bootstrap 5 icons CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="bag-shopping-solid.svg" type="image/x-icon">
+
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <p>Get 10% OFF at the MoS7awky Gift's selection - Shop Now!</p>
+           
+        </div>
+        <nav>
+            <div class="logo"></div>
+             <!--  -->
+            <div class="user-options">
+                <ul>
+                    <li><a href="profile.html">My account</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="signin.html">log in</a></li>
+                    
+                    <div class="menu">
+    
+
+                        <form action="">
+                            <label for="menu"><i  class="fa-solid fa-bars"></i></label>
+                            <select name="" id="menu" class="menu">
+                                <option value="Featured"><a href="#featured-products">Featured Products</a></option>
+                                <option value="Summer"><a href="#summer-products">Summer Collection</a> </option>
+                                <option value="Summer"> Products <i class="fa-solid fa-caret-right"></i></option> 
+                                <option value="Summer">Features</option>
+                                <option value="Summer">Elements</option>
+                            </select>
+                        </form>
+    
+                         </div>
+                        
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="hero-section">
+   <nav>
+    <div class="logo1">
+        <h4 class="Porto">PORTO</h4>
+        <small class="eCommerce">eCommerce</small>
+    </div>
+ 
+   </nav>
+
+        <aside>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <form action="">
+                            <label for="cat"> Categories <i class="fa-solid fa-caret-right"></i></label> 
+                            <select name="" id="cat" class="form">
+                                <option value="Featured"><a href="#featured-products">Featured Products</a></option>
+                                <option value="Summer"><a href="#summer-products">Summer Collection</a> </option>
+                            </select>
+                        </form>
+                   
+                    </li>
+                    <li>
+                        <form action="">
+                            <label for="pro"> Products <i class="fa-solid fa-caret-right"></i></label> 
+                            <select name="" id="pro" class="form2">
+                                <option value="Featured"><a href="#featured-products">shoes</a></option>
+                                <option value="Summer"><a href="#summer-products">bag</a> </option>
+                                <option value="Summer"><a href="#summer-products">Belt</a> </option>
+                                <option value="Summer"><a href="#summer-products">Cap</a> </option>
+                                <option value="Summer"><a href="#summer-products">Sun Glasses</a> </option>
+                                <option value="Summer"><a href="#summer-products">Wallet</a> </option>
+                            </select>
+                        </form>
+                    </li>
+                    <li>Features <i class="fa-solid fa-caret-right"></i></li>
+                    <li>Elements</li>
+                </ul>
+            </div>
+        </aside>
+
+
+        <div class="center">
+            <h1 >Summer Sale 30% OFF</h1>
+            <p >Starting at $39.99</p>
+            <button class="btn btn-dart" style="
+            font-size: 20px;
+            border-radius: 10px; 
+            ">Get Yours!</button>
+        </div>
+    </section>
+    <div class="side">
+        <div class="fa-car-side">
+            <h4><i class="fa-solid fa-car-side"></i> FREE SHIPPING & RETURN</h4>
+            <h4><i class="fa-solid fa-dollar-sign"></i> MONEY BACK GUARANTEE</h4>
+            <h4><i class="fa-regular fa-clock"></i> ONLINE SUPPORT 24/7</h4>
+            <h4><i class="fa-solid fa-wallet"></i> SECURE PAYMENT</h4>
+        </div>
+    </div>
+
+    <section class="featured-products" id="featured-products">
+       <span style="color:#dad8d8d6;">~~~~~~~~~~</span><span class="span" >Shoes</span><span style="color: #dad8d8d6;">~~~~~~~~~~</span> 
+       <div> 
+         
+        <div> 
+            <div class="product-grid">
+                <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/1.webp">
+                    <img src="shoes/1.webp" alt="Light Brown Shoes">
+                   <div class="heart">
+                    <p>Brown Shoes</p>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>$59.00</p>   
+                </div>
+                <div class="buy">
+                    <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                    <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'shoes/1.webp')">add cart</button>
+                </div>
+                </div>
+                <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/2.webp">
+                    <img src="shoes/2.webp" alt="Light Brown Shoes">
+                    <div class="heart">
+                     <p>Brown Shoes</p>
+                     <i class="fa-solid fa-heart"></i>
+                    </div>
+                 <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                     <p>$59.00</p>   
+                 </div>
+                 <div class="buy">
+                    <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                    <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'shoes/2.webp')">add cart</button>
+                 </div>
+                 </div>
+                 <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/3.webp">
+                    <img src="shoes/3.webp" alt="Light Brown Shoes">
+                    <div class="heart">
+                     <p>Brown Shoes</p>
+                     <i class="fa-solid fa-heart"></i>
+                    </div>
+                 <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                     <p>$59.00</p>   
+                 </div>
+                 <div class="buy">
+                    <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                    <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'shoes/3.webp')">add cart</button>
+                 </div>
+                 </div>  
+                 <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/4.webp">
+                    <img src="shoes/4.webp" alt="Light Brown Shoes">
+                    <div class="heart">
+                     <p>Brown Shoes</p>
+                     <i class="fa-solid fa-heart"></i>
+                    </div>
+                 <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                     <p>$59.00</p>   
+                 </div>
+                 <div class="buy">
+                    <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                    <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'shoes/4.webp')">add cart</button>
+                 </div>
+                 </div>
+                 </div>
+            
+    </section>
+    <section class="featured-products">
+             
+<div> 
+    <div class="product-grid">
+        <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/5.webp">
+            <img src="shoes/5.webp" alt="Light Brown Shoes">
+           <div class="heart">
+            <p>Brown Shoes</p>
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>$59.00</p>   
+        </div>
+        <div class="buy">
+            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'shoes/5.webp')">add cart</button>
+        </div>
+        </div>
+        <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/6.webp">
+            <img src="shoes/6.webp" alt="Light Brown Shoes">
+            <div class="heart">
+             <p>Brown Shoes</p>
+             <i class="fa-solid fa-heart"></i>
+            </div>
+         <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+             <p>$59.00</p>   
+         </div>
+         <div class="buy">
+            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'shoes/6.webp')">add cart</button>
+        </div>
+         </div>
+         <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/7.webp">
+            <img src="shoes/7.webp" alt="Light Brown Shoes">
+            <div class="heart">
+             <p>Brown Shoes</p>
+             <i class="fa-solid fa-heart"></i>
+            </div>
+         <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+             <p>$59.00</p>   
+         </div>
+         <div class="buy">
+            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'shoes/7.webp')">add cart</button>
+        </div>
+         </div>  
+         <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/8.png">
+            <img src="shoes/8.png" alt="Light Brown Shoes">
+            <div class="heart">
+             <p>Brown Shoes</p>
+             <i class="fa-solid fa-heart"></i>
+            </div>
+         <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+             <p>$59.00</p>   
+         </div>
+         <div class="buy">
+            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'shoes/8.png')">add cart</button>
+         </div>
+         </div>
+    </section>
+    <section class="featured-products">
+              
+<div> 
+    <div class="product-grid">
+        <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/9.png">
+            <img src="shoes/9.png" alt="Light Brown Shoes">
+           <div class="heart">
+            <p>Brown Shoes</p>
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>$59.00</p>   
+        </div>
+        <div class="buy">
+            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'shoes/9.png')">add cart</button>
+        </div>
+        </div>
+        <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/10.png">
+            <img src="shoes/10.png" alt="Light Brown Shoes">
+            <div class="heart">
+             <p>Brown Shoes</p>
+             <i class="fa-solid fa-heart"></i>
+            </div>
+         <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+             <p>$59.00</p>   
+         </div>
+         <div class="buy">
+            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'shoes/10.png')">add cart</button>
+         </div>
+         </div>
+         <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/11.png">
+            <img src="shoes/11.png" alt="Light Brown Shoes">
+            <div class="heart">
+             <p>Brown Shoes</p>
+             <i class="fa-solid fa-heart"></i>
+            </div>
+         <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+             <p>$59.00</p>   
+         </div>
+         <div class="buy">
+            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'shoes/11.png')">add cart</button>
+         </div>
+         </div>  
+         <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/12.png">
+            <img src="shoes/12.png" alt="Light Brown Shoes">
+            <div class="heart">
+             <p>Brown Shoes</p>
+             <i class="fa-solid fa-heart"></i>
+            </div>
+         <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>>
+             <p>$59.00</p>   
+         </div>
+         <div class="buy">
+            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'shoes/12.png')">add cart</button>
+         </div>
+         </div>
+    </section>
+    <div class="text1" style="text-align: center;">
+        <span style="color:#dad8d8d6;">~~~~~~~~~~~~~~~~~</span><span class="span" >Summer</span><small>Collection</small><span style="color: #dad8d8d6;">~~~~~~~~~~~~~~~~~</span>   
+    </div>
+    <div class="text2" style="text-align: center;">
+        <span style="color:#dad8d8d6;;">~~~~~~~~~~</span><span class="span" >Summer</span><small>Collection</small><span style="color: #dad8d8d6;">~~~~~~~~~~</span>   
+    </div>
+    
+    <section class="summer-products" id="summer-products">
+
+        <div class="img1" style="height: auto;">
+            <img src="image/2.png" alt="">
+        </div>
+        <div class="img2">
+            <img src="image/3.png" style="margin-bottom: 20px;" alt="">
+            <img src="image/4.png" alt="">
+        </div>
+        <div class="img3">
+            <img src="image/5.png" style="margin-bottom: 20px;" alt="">
+            <img src="image/6.png" alt="">
+        </div>
+    </section>
+<section class=" featured-products">
+    
+<div> 
+         
+<div> 
+    <div class="product-grid">
+        <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/13.jpeg">
+            <img src="shoes/13.jpeg" alt="Light Brown Shoes">
+           <div class="heart">
+            <p>Brown Shoes</p>
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>$59.00</p>   
+        </div>
+        <div class="buy">
+            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes',59, 'shoes/13.jpeg')">add cart</button>
+        </div>
+        </div>
+        <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/14.jpeg">
+            <img src="shoes/14.jpeg" alt="Light Brown Shoes">
+            <div class="heart">
+             <p>Brown Shoes</p>
+             <i class="fa-solid fa-heart"></i>
+            </div>
+         <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+             <p>$59.00</p>   
+         </div>
+         <div class="buy">
+            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'shoes/14.jpeg')">add cart</button>
+         </div>
+         </div>
+         <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/15.jpeg">
+            <img src="shoes/15.jpeg" alt="Light Brown Shoes">
+            <div class="heart">
+             <p>Brown Shoes</p>
+             <i class="fa-solid fa-heart"></i>
+            </div>
+         <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+             <p>$59.00</p>   
+         </div>
+         <div class="buy">
+            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'shoes/15.jpeg')">add cart</button>
+         </div>
+         </div>  
+         <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="shoes/16.jpeg">
+            <img src="shoes/16.jpeg" alt="Light Brown Shoes">
+            <div class="heart">
+             <p>Brown Shoes</p>
+             <i class="fa-solid fa-heart"></i>
+            </div>
+         <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+             <p>$59.00</p>   
+         </div>
+         <div class="buy">
+            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'shoes/16.jpeg')">add cart</button>
+         </div>
+         </div>
+         </div>
+
+</section>
+
+<div class="text1" style="text-align: center;">
+    <span style="color:#dad8d8d6;;">~~~~~~~~~~~~~~~~~</span><span class="span" >Bag</span><span style="color: #dad8d8d6;">~~~~~~~~~~~~~~~~~</span>   
+</div>
+<div class="text2" style="text-align: center;">
+    <span style="color:#dad8d8d6;;">~~~~~~~~~~</span><span class="span" >Bag</span><span style="color: #dad8d8d6;">~~~~~~~~~~</span>   
+</div>
+
+<section class=" featured-products">
+    
+    <div> 
+             
+    <div> 
+        <div class="product-grid">
+            <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="bag/1.webp">
+                <img src="bag/1.webp" alt="Light Brown Shoes">
+               <div class="heart">
+                <p>Brown Shoes</p>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>$59.00</p>   
+            </div>
+            <div class="buy">
+                <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'bag/1.webp')">add cart</button>
+            </div>
+            </div>
+            <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="bag/2.webp">
+                <img src="bag/2.webp" alt="Light Brown Shoes">
+                <div class="heart">
+                 <p>Brown Shoes</p>
+                 <i class="fa-solid fa-heart"></i>
+                </div>
+             <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                 <p>$59.00</p>   
+             </div>
+             <div class="buy">
+                <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'bag/2.webp')">add cart</button>
+             </div>
+             </div>
+             <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="bag/3.webp">
+                <img src="bag/3.webp" alt="Light Brown Shoes">
+                <div class="heart">
+                 <p>Brown Shoes</p>
+                 <i class="fa-solid fa-heart"></i>
+                </div>
+             <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                 <p>$59.00</p>   
+             </div>
+             <div class="buy">
+                <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'bag/3.webp')">add cart</button>
+             </div>
+             </div>  
+             <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="bag/4.webp">
+                <img src="bag/4.webp" alt="Light Brown Shoes">
+                <div class="heart">
+                 <p>Brown Shoes</p>
+                 <i class="fa-solid fa-heart"></i>
+                </div>
+             <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                 <p>$59.00</p>   
+             </div>
+             <div class="buy">
+                <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'bag/4.webp')">add cart</button>
+             </div>
+             </div>
+             </div>
+    
+    </section>
+
+
+
+    <section class=" featured-products">
+    
+        <div> 
+                 
+        <div> 
+            <div class="product-grid">
+                <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="bag/4.webp">
+                    <img src="bag/5.webp" alt="Light Brown Shoes">
+                   <div class="heart">
+                    <p>Brown Shoes</p>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>$59.00</p>   
+                </div>
+                <div class="buy">
+                    <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                    <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'bag/4.webp')">add cart</button>
+                </div>
+                </div>
+                <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="bag/5.webp">
+                    <img src="bag/5.webp" alt="Light Brown Shoes">
+                    <div class="heart">
+                     <p>Brown Shoes</p>
+                     <i class="fa-solid fa-heart"></i>
+                    </div>
+                 <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                     <p>$59.00</p>   
+                 </div>
+                 <div class="buy">
+                    <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                    <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'bag/5.webp')">add cart</button>
+                 </div>
+                 </div>
+                 <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="bag/6.webp">
+                    <img src="bag/6.webp" alt="Light Brown Shoes">
+                    <div class="heart">
+                     <p>Brown Shoes</p>
+                     <i class="fa-solid fa-heart"></i>
+                    </div>
+                 <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                     <p>$59.00</p>   
+                 </div>
+                 <div class="buy">
+                    <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                    <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'bag/6.webp')">add cart</button>
+                 </div>
+                 </div>  
+                 <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="bag/8.webp">
+                    <img src="bag/8.webp" alt="Light Brown Shoes">
+                    <div class="heart">
+                     <p>Brown Shoes</p>
+                     <i class="fa-solid fa-heart"></i>
+                    </div>
+                 <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                     <p>$59.00</p>   
+                 </div>
+                 <div class="buy">
+                    <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                    <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'bag/8.webp')">add cart</button>
+                 </div>
+                 </div>
+                 </div>
+        
+        </section>
+
+
+
+        <div class="text1" style="text-align: center;">
+            <span style="color:#dad8d8d6;;">~~~~~~~~~~~~~~~~~</span><span class="span" >Belt<span style="color: #dad8d8d6;">~~~~~~~~~~~~~~~~~</span>   
+        </div>
+        <div class="text2" style="text-align: center;">
+            <span style="color:#dad8d8d6;;">~~~~~~~~~~</span><span class="span" >Belt</span><span style="color: #dad8d8d6;">~~~~~~~~~~</span>   
+        </div>
+        
+        <section class=" featured-products">
+    
+            <div> 
+                     
+            <div> 
+                <div class="product-grid">
+                    <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="Belt/1.webp">
+                        <img src="Belt/1.webp" alt="Light Brown Shoes">
+                       <div class="heart">
+                        <p>Brown Shoes</p>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>$59.00</p>   
+                    </div>
+                    <div class="buy">
+                        <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                        <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'Belt/1.webp')">add cart</button>
+                    </div>
+                    </div>
+                    <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="Belt/2.webp">
+                        <img src="Belt/2.webp" alt="Light Brown Shoes">
+                        <div class="heart">
+                         <p>Brown Shoes</p>
+                         <i class="fa-solid fa-heart"></i>
+                        </div>
+                     <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                         <p>$59.00</p>   
+                     </div>
+                     <div class="buy">
+                        <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                        <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'Belt/2.webp')">add cart</button>
+                     </div>
+                     </div>
+                     <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="Belt/3.webp">
+                        <img src="Belt/3.webp" alt="Light Brown Shoes">
+                        <div class="heart">
+                         <p>Brown Shoes</p>
+                         <i class="fa-solid fa-heart"></i>
+                        </div>
+                     <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                         <p>$59.00</p>   
+                     </div>
+                     <div class="buy">
+                        <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                        <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'Belt/3.webp')">add cart</button>
+                     </div>
+                     </div>  
+                     <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="Belt/4.webp">
+                        <img src="Belt/4.webp" alt="Light Brown Shoes">
+                        <div class="heart">
+                         <p>Brown Shoes</p>
+                         <i class="fa-solid fa-heart"></i>
+                        </div>
+                     <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                         <p>$59.00</p>   
+                     </div>
+                     <div class="buy">
+                        <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                        <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'Belt/4.webp')">add cart</button>
+                     </div>
+                     </div>
+                     </div>
+            
+            </section>
+
+
+            <div class="text1" style="text-align: center;">
+                <span style="color:#dad8d8d6;;">~~~~~~~~~~~~~~~~~</span><span class="span" >Sun</span><small>Glasses</small><span style="color: #dad8d8d6;">~~~~~~~~~~~~~~~~~</span>   
+            </div>
+            <div class="text2" style="text-align: center;">
+                <span style="color:#dad8d8d6;;">~~~~~~~~~~~~~~~~</span><span class="span" >Sun</span><small>Glasses</small><span style="color: #dad8d8d6;">~~~~~~~~~~~~~~~~</span>   
+            </div>
+            
+            <section class=" featured-products">
+        
+                <div> 
+                         
+                <div> 
+                    <div class="product-grid">
+                        <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="sun glasses/1.webp">
+                            <img src="sun glasses/1.webp" alt="Light Brown Shoes">
+                           <div class="heart">
+                            <p>Brown Shoes</p>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$59.00</p>   
+                        </div>
+                        <div class="buy">
+                            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'sun glasses/1.webp')">add cart</button>
+                        </div>
+                        </div>
+                        <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="sun glasses/2.webp">
+                            <img src="sun glasses/2.webp" alt="Light Brown Shoes">
+                            <div class="heart">
+                             <p>Brown Shoes</p>
+                             <i class="fa-solid fa-heart"></i>
+                            </div>
+                         <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                             <p>$59.00</p>   
+                         </div>
+                         <div class="buy">
+                            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'sun glasses/2.webp')">add cart</button>
+                         </div>
+                         </div>
+                         <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="sun glasses/3.webp">
+                            <img src="sun glasses/3.webp" alt="Light Brown Shoes">
+                            <div class="heart">
+                             <p>Brown Shoes</p>
+                             <i class="fa-solid fa-heart"></i>
+                            </div>
+                         <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                             <p>$59.00</p>   
+                         </div>
+                         <div class="buy">
+                            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'sun glasses/3.webp')">add cart</button>
+                         </div>
+                         </div>  
+                         <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="sun glasses/4.webp">
+                            <img src="sun glasses/4.webp" alt="Light Brown Shoes">
+                            <div class="heart">
+                             <p>Brown Shoes</p>
+                             <i class="fa-solid fa-heart"></i>
+                            </div>
+                         <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                             <p>$59.00</p>   
+                         </div>
+                         <div class="buy">
+                            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'sun glasses/4.webp')">add cart</button>
+                         </div>
+                         </div>
+                         </div>
+                
+                </section>
+    
+
+                <div class="text1" style="text-align: center;">
+                    <span style="color:#dad8d8d6;;">~~~~~~~~~~~~~~~~~</span><span class="span" >Tank</span><small>Top</small><span style="color: #dad8d8d6;">~~~~~~~~~~~~~~~~~</span>   
+                </div>
+                <div class="text2" style="text-align: center;">
+                    <span style="color:#dad8d8d6;;">~~~~~~~~~~</span><span class="span" >Tank</span><small>Top</small><span style="color: #dad8d8d6;">~~~~~~~~~~</span>   
+                </div>
+                
+                <section class=" featured-products">
+            
+                    <div> 
+                             
+                    <div> 
+                        <div class="product-grid">
+                            <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="tank top/1.webp">
+                                <img src="tank top/1.webp" alt="Light Brown Shoes">
+                               <div class="heart">
+                                <p>Brown Shoes</p>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p>$59.00</p>   
+                            </div>
+                            <div class="buy">
+                                <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'tank top/1.webp')">add cart</button>
+                            </div>
+                            </div>
+                            <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="tank top/2.png">
+                                <img src="tank top/2.png" alt="Light Brown Shoes">
+                                <div class="heart">
+                                 <p>Brown Shoes</p>
+                                 <i class="fa-solid fa-heart"></i>
+                                </div>
+                             <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                 <p>$59.00</p>   
+                             </div>
+                             <div class="buy">
+                                <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'tank top/2.png')">add cart</button>
+                             </div>
+                             </div>
+                             <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="tank top/3.webp">
+                                <img src="tank top/3.webp" alt="Light Brown Shoes">
+                                <div class="heart">
+                                 <p>Brown Shoes</p>
+                                 <i class="fa-solid fa-heart"></i>
+                                </div>
+                             <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                 <p>$59.00</p>   
+                             </div>
+                             <div class="buy">
+                                <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'tank top/3.webp')">add cart</button>
+                             </div>
+                             </div>  
+                             <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="tank top/3.webp">
+                                <img src="tank top/4.webp" alt="Light Brown Shoes">
+                                <div class="heart">
+                                 <p>Brown Shoes</p>
+                                 <i class="fa-solid fa-heart"></i>
+                                </div>
+                             <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                 <p>$59.00</p>   
+                             </div>
+                             <div class="buy">
+                                <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'tank top/3.webp')">add cart</button>
+                             </div>
+                             </div>
+                             </div>
+                    
+                    </section>
+        
+    
+                    <section class=" featured-products">
+                
+                        <div> 
+                                 
+                        <div> 
+                            <div class="product-grid">
+                                <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="tank top/4.webp">
+                                    <img src="tank top/4.webp" alt="Light Brown Shoes">
+                                   <div class="heart">
+                                    <p>Brown Shoes</p>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>$59.00</p>   
+                                </div>
+                                <div class="buy">
+                                    <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                    <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'tank top/4.webp')">add cart</button>
+                                </div>
+                                </div>
+                                <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="tank top/5.webp">
+                                    <img src="tank top/5.webp" alt="Light Brown Shoes">
+                                    <div class="heart">
+                                     <p>Brown Shoes</p>
+                                     <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                 <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                     <p>$59.00</p>   
+                                 </div>
+                                 <div class="buy">
+                                    <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                    <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'tank top/5.webp')">add cart</button>
+                                 </div>
+                                 </div>
+                                 <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="tank top/6.webp">
+                                    <img src="tank top/6.webp" alt="Light Brown Shoes">
+                                    <div class="heart">
+                                     <p>Brown Shoes</p>
+                                     <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                 <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                     <p>$59.00</p>   
+                                 </div>
+                                 <div class="buy">
+                                    <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                    <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'tank top/6.webp')">add cart</button>
+                                 </div>
+                                 </div>  
+                                 <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="tank top/7.webp">
+                                    <img src="tank top/7.webp" alt="Light Brown Shoes">
+                                    <div class="heart">
+                                     <p>Brown Shoes</p>
+                                     <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                 <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                     <p>$59.00</p>   
+                                 </div>
+                                 <div class="buy">
+                                    <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                    <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'tank top/7.webp')">add cart</button>
+                                 </div>
+                                 </div>
+                                 </div>
+                        
+                        </section>
+            
+        
+            
+
+
+                        <div class="text1" style="text-align: center;">
+                            <span style="color:#dad8d8d6;;">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span><span class="span" >Wallet</span><span style="color: #dad8d8d6;">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>   
+                        </div>
+                        <div class="text2" style="text-align: center;">
+                            <span style="color:#dad8d8d6;;">~~~~~~~~~~</span><span class="span">Wallet</span><span style="color: #dad8d8d6;">~~~~~~~~~~</span>   
+                        </div>
+                        
+                        <section class=" featured-products ">
+                    
+                            <div> 
+                                     
+                            <div> 
+                                <div class="product-grid">
+                                    <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="wallet/1.webp">
+                                        <img src="wallet/1.webp" alt="Light Brown Shoes">
+                                       <div class="heart">
+                                        <p>Brown Shoes</p>
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>$59.00</p>   
+                                    </div>
+                                    <div class="buy">
+                                        <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                        <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'wallet/1.webp')">add cart</button>
+                                    </div>
+                                    </div>
+                                    <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="wallet/2.webp">
+                                        <img src="wallet/2.webp" alt="Light Brown Shoes">
+                                        <div class="heart">
+                                         <p>Brown Shoes</p>
+                                         <i class="fa-solid fa-heart"></i>
+                                        </div>
+                                     <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                         <p>$59.00</p>   
+                                     </div>
+                                     <div class="buy">
+                                        <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                        <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'wallet/2.webp')">add cart</button>
+                                     </div>
+                                     </div>
+                                     <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="wallet/3.webp">
+                                        <img src="wallet/3.webp" alt="Light Brown Shoes">
+                                        <div class="heart">
+                                         <p>Brown Shoes</p>
+                                         <i class="fa-solid fa-heart"></i>
+                                        </div>
+                                     <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                         <p>$59.00</p>   
+                                     </div>
+                                     <div class="buy">
+                                        <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                        <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'wallet/3.webp')">add cart</button>
+                                     </div>
+                                     </div>  
+                                     <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="wallet/4.webp">
+                                        <img src="wallet/4.webp" alt="Light Brown Shoes">
+                                        <div class="heart">
+                                         <p>Brown Shoes</p>
+                                         <i class="fa-solid fa-heart"></i>
+                                        </div>
+                                     <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                         <p>$59.00</p>   
+                                     </div>
+                                     <div class="buy">
+                                        <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                        <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'wallet/4.webp')">add cart</button>
+                                     </div>
+                                     </div>
+                                     </div>
+                            
+                            </section>
+                
+            
+                            <section class=" featured-products ">
+                        
+                                <div> 
+                                         
+                                <div> 
+                                    <div class="product-grid">
+                                        <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="wallet/5.webp">
+                                            <img src="wallet/5.webp" alt="Light Brown Shoes">
+                                           <div class="heart">
+                                            <p>Brown Shoes</p>
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <p>$59.00</p>   
+                                        </div>
+                                        <div class="buy">
+                                            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'wallet/5.webp')">add cart</button>
+                                        </div>
+                                        </div>
+                                        <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="wallet/6.webp">
+                                            <img src="wallet/6.webp" alt="Light Brown Shoes">
+                                            <div class="heart">
+                                             <p>Brown Shoes</p>
+                                             <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                         <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                             <p>$59.00</p>   
+                                         </div>
+                                         <div class="buy">
+                                            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'wallet/6.webp')">add cart</button>
+                                         </div>
+                                         </div>
+                                         <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="wallet/7.webp">
+                                            <img src="wallet/7.webp" alt="Light Brown Shoes">
+                                            <div class="heart">
+                                             <p>Brown Shoes</p>
+                                             <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                         <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                             <p>$59.00</p>   
+                                         </div>
+                                         <div class="buy">
+                                            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'wallet/7.webp')">add cart</button>
+                                         </div>
+                                         </div>  
+                                         <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="wallet/8.webp">
+                                            <img src="wallet/8.webp" alt="Light Brown Shoes">
+                                            <div class="heart">
+                                             <p>Brown Shoes</p>
+                                             <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                         <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                             <p>$59.00</p>   
+                                         </div>
+                                         <div class="buy">
+                                            <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                            <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'wallet/8.webp')">add cart</button>
+                                         </div>
+                                         </div>
+                                         </div>
+                                
+                                </section>
+
+
+
+
+                                <div class="text1" style="text-align: center;">
+                                    <span style="color:#dad8d8d6;;">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span><span class="span" >Cap</span><span style="color: #dad8d8d6;">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>   
+                                </div>
+                                <div class="text2" style="text-align: center;">
+                                    <span style="color:#dad8d8d6;;">~~~~~~~~~~</span><span class="span" >Cap</span><span style="color: #dad8d8d6;">~~~~~~~~~~</span>   
+                                </div>
+                                
+
+                                <section class=" featured-products">
+                        
+                                    <div> 
+                                             
+                                    <div> 
+                                        <div class="product-grid">
+                                            <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="cap/1.webp">
+                                                <img src="cap/1.webp" alt="Light Brown Shoes">
+                                               <div class="heart">
+                                                <p>Brown Shoes</p>
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                            <div class="star">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>$59.00</p>   
+                                            </div>
+                                            <div class="buy">
+                                                <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                                <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'cap/1.webp')">add cart</button>
+                                            </div>
+                                            </div>
+                                            <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="cap/2.webp">
+                                                <img src="cap/2.webp" alt="Light Brown Shoes">
+                                                <div class="heart">
+                                                 <p>Brown Shoes</p>
+                                                 <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                             <div class="star">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                 <p>$59.00</p>   
+                                             </div>
+                                             <div class="buy">
+                                                <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                                <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'cap/2.webp')">add cart</button>
+                                             </div>
+                                             </div>
+                                             <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="cap/3.webp">
+                                                <img src="cap/3.webp" alt="Light Brown Shoes">
+                                                <div class="heart">
+                                                 <p>Brown Shoes</p>
+                                                 <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                             <div class="star">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                 <p>$59.00</p>   
+                                             </div>
+                                             <div class="buy">
+                                                <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                                <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'cap/3.webp')">add cart</button>
+                                             </div>
+                                             </div>  
+                                             <div class="product-item product" data-name="Light Brown Shoes" data-price="59" data-image="cap/4.webp">
+                                                <img src="cap/4.webp" alt="Light Brown Shoes">
+                                                <div class="heart">
+                                                 <p>Brown Shoes</p>
+                                                 <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                             <div class="star">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                 <p>$59.00</p>   
+                                             </div>
+                                             <div class="buy">
+                                                <button class="btn btn-secondary newUser"> <a href="buy.html">buy Now</a></button>
+                                                <button class="btn btn-secondary newUser"onclick="addToCart('Light Brown Shoes', 59, 'cap/4.webp')">add cart</button>
+                                             </div>
+                                             </div>
+                                             </div>
+                                    
+                                    </section>
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2024 MoS7awky E-commerce. Designed by Engineer Mohamed Shawky All Rights Reserved.</p>
+    </footer>
+
+    
+    <script>
+        function addToCart(name, price, image) {
+          let cart = JSON.parse(localStorage.getItem('cart')) || [];
+          cart.push({ name, price, image });
+          localStorage.setItem('cart', JSON.stringify(cart));
+          alert(name + " تمت إضافته إلى السلة!");
+        }
+      </script>
+    <script src="script.js"></script>
+</body>
+</html>
